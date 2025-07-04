@@ -1,0 +1,11 @@
+<resources>
+    <string-array name="categories_array">
+        <item>Catering</item>
+        <item>Venue</item>
+        <item>Photography</item>
+        <item>Decorations</item>
+        <item>Entertainment</item>
+        <item>Beauty</item>
+        <item>Other</item>
+    </string-array>
+</resources>

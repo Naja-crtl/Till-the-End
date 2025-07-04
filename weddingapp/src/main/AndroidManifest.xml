@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.example.weddingapp">
+
+        <!-- Permissions -->
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.READ_CONTACTS" />
+        <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+        <uses-permission android:name="android.permission.SET_ALARM" />
+        <uses-permission android:name="android.permission.VIBRATE" />
+        <uses-permission android:name="android.permission.CALL_PHONE" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+        <!-- Optional hardware features -->
+        <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+        <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+        <uses-feature android:name="android.hardware.location" android:required="false"/>
+
+        <application
+            android:allowBackup="true"
+            android:hardwareAccelerated="false"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:label="WeddingApp"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.MyApplication">
+
+            <!-- Splash Screen -->
+            <activity
+                android:name=".LandingPage.base.starter_screen"
+                android:exported="true">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN"/>
+                    <category android:name="android.intent.category.LAUNCHER"/>
+                </intent-filter>
+            </activity>
+
+            <!-- Guests Activity -->
+            <activity
+                android:name=".LandingPage.Guests.GuestsActivity"
+                android:exported="false"/>
+
+
+            <!-- Other Activities -->
+            <activity android:name=".LandingPage.Budget.ExpenseDetailsActivity" android:exported="false"/>
+            <activity android:name=".LandingPage.Category.CategoryDetailActivity" android:exported="false"/>
+            <activity android:name=".LandingPage.Timeline.EventTimelineActivity" android:exported="false"/>
+            <activity android:name=".LandingPage.Budget.AddExpenseActivity"/>
+            <activity android:name=".LandingPage.Category.CategoriesActivity"/>
+            <activity
+                android:name=".LandingPage.Budget.BudgetActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:exported="false"
+                android:label="@string/title_activity_budget"
+                android:theme="@style/Theme.MyApplication.Fullscreen"/>
+            <activity android:name=".auth.signin_page" android:exported="false"/>
+            <activity android:name=".auth.signup_page" android:exported="false"/>
+            <activity android:name=".LandingPage.base.dashboard" android:exported="false"/>
+            <activity android:name=".auth.couplenames" android:exported="false"/>
+
+            <!-- InvitationCardActivity: no hardwareAccelerated attribute here any more -->
+            <activity
+                android:name=".LandingPage.Guests.Invitation.InvitationCardActivity"
+                android:exported="false"/>
+
+            <activity android:name=".LandingPage.base.profile" android:exported="false"/>
+
+            <!-- Notification Receiver -->
+            <receiver android:name=".LandingPage.Timeline.NotificationReceiver"/>
+
+            <!-- AdMob -->
+            <meta-data
+                android:name="com.google.android.gms.ads.APPLICATION_ID"
+                android:value="ca-app-pub-8672388835274922~1668621141"/>
+        </application>
+    </manifest>

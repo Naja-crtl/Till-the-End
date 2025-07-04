@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Couple's Names: side by side -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/etBrideName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Bride's Name"
+                android:fontFamily="cursive"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/tvAnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&amp;"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etGroomName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Groom's Name"
+                android:fontFamily="cursive"
+                android:layout_marginStart="8dp"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <!-- Wedding Date -->
+        <EditText
+            android:id="@+id/etWeddingDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wedding Date"
+            android:layout_marginTop="16dp"
+            android:focusable="false"
+            android:clickable="true"
+            android:fontFamily="cursive" />
+
+        <!-- Wedding Venue -->
+        <EditText
+            android:id="@+id/etWeddingVenue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Venue (e.g., Grand Palace, Beirut)"
+            android:fontFamily="cursive"
+            android:layout_marginTop="16dp" />
+
+        <!-- Custom Message -->
+        <EditText
+            android:id="@+id/etCustomMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Message"
+            android:fontFamily="cursive"
+            android:layout_marginTop="16dp"
+            android:inputType="textMultiLine"
+            android:minLines="3" />
+
+        <!-- Program Events Section -->
+        <TextView
+            android:id="@+id/tvEventsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Program Events"
+            android:fontFamily=""
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/btnAddEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ Add Event"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/light_grey" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvProgramEvents"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:overScrollMode="never" />
+
+        <!-- Gift Registry Section -->
+        <TextView
+            android:id="@+id/tvGiftsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gift Registry"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/btnAddGiftMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ Add Gift Option"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/light_grey" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvGiftMethods"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:overScrollMode="never" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSendCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Invitation"
+            android:textColor="@color/black"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/light_grey" />
+
+    </LinearLayout>
+</ScrollView>

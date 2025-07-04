@@ -1,0 +1,59 @@
+<resources>
+    <string-array name="country_codes">
+        <item>Afghanistan +93</item>
+        <item>Albania +355</item>
+        <item>Algeria +213</item>
+        <item>Andorra +376</item>
+        <item>Angola +244</item>
+        <item>Argentina +54</item>
+        <item>Armenia +374</item>
+        <item>Australia +61</item>
+        <item>Austria +43</item>
+        <item>Azerbaijan +994</item>
+        <item>Bahrain +973</item>
+        <item>Bangladesh +880</item>
+        <item>Belarus +375</item>
+        <item>Belgium +32</item>
+        <item>Brazil +55</item>
+        <item>Canada +1</item>
+        <item>China +86</item>
+        <item>Cyprus +357</item>
+        <item>Denmark +45</item>
+        <item>Egypt +20</item>
+        <item>France +33</item>
+        <item>Germany +49</item>
+        <item>Greece +30</item>
+        <item>India +91</item>
+        <item>Indonesia +62</item>
+        <item>Italy +39</item>
+        <item>Japan +81</item>
+        <item>Kuwait +965</item>
+        <item>Lebanon +961</item>
+        <item>Mexico +52</item>
+        <item>Netherlands +31</item>
+        <item>Norway +47</item>
+        <item>Pakistan +92</item>
+        <item>Qatar +974</item>
+        <item>Russia +7</item>
+        <item>Saudi Arabia +966</item>
+        <item>South Africa +27</item>
+        <item>South Korea +82</item>
+        <item>Spain +34</item>
+        <item>Sweden +46</item>
+        <item>Switzerland +41</item>
+        <item>Turkey +90</item>
+        <item>UAE +971</item>
+        <item>UK +44</item>
+        <item>US +1</item>
+        <item>Yemen +967</item>
+    </string-array>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_budget">budget</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="default_web_client_id">
+        400054102097-18fl4cfgkrkaak4bn17jv33kjipbfn9u.apps.googleusercontent.com
+    </string>
+</resources>

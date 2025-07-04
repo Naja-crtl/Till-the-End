@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Single Selection Group -->
+    <group android:checkableBehavior="single">
+
+        <!-- Home -->
+        <item
+            android:id="@+id/navHome"
+            android:icon="@drawable/home"
+            android:title="Home" />
+
+
+        <!-- Calendar -->
+        <item
+            android:id="@+id/navTimeline"
+            android:icon="@drawable/event"
+            android:title="Calendar" />
+
+        <!-- Guest List -->
+        <item
+            android:id="@+id/navGuestList"
+            android:icon="@drawable/guests"
+            android:title="Guest List" />
+
+        <!-- Budget -->
+        <item
+            android:id="@+id/navBudget"
+            android:icon="@drawable/budget"
+            android:title="Budget" />
+
+        <!-- Categories -->
+        <item
+            android:id="@+id/navCategories"
+            android:icon="@drawable/category"
+            android:title="Categories" />
+
+        <!-- Log Out -->
+        <item
+            android:id="@+id/navLogout"
+            android:icon="@drawable/exit"
+            android:title="Log Out" />
+
+    </group>
+</menu>
